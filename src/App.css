@@ -1,0 +1,86 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.players-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.player-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #000;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.player-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.controls {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control-button {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.control-button:hover {
+  background: #0056b3;
+}
+
+.control-button.playing {
+  background: #dc3545;
+}
+
+.control-button.playing:hover {
+  background: #c82333;
+}
+
+.stats {
+  color: #666;
+}
+
+.stats p {
+  margin: 0.25rem 0;
+}
+
+@media (max-width: 768px) {
+  .players-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.plyr--video {
+  height: auto !important;
+}
