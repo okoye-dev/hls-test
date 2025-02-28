@@ -3,6 +3,7 @@ import Plyr from "plyr";
 import Hls from "hls.js";
 import "plyr/dist/plyr.css";
 import "./App.css";
+import TestVideoUpload from "./TestUpload";
 
 function App() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -75,15 +76,19 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Video Player</h1>
-      <div className="player-wrapper">
+      {/* <h1>Video Player</h1> */}
+      {/* <div className="player-wrapper">
         <video
           ref={videoRef}
           playsInline
           controls
           crossOrigin="anonymous" // Add this if needed for CORS
         />
-      </div>
+      </div> */}
+      <br />
+      <br />
+      <div>Test Upload</div>
+      <TestVideoUpload />
     </div>
   );
 }
